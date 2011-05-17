@@ -1,0 +1,36 @@
+//Graham Guletz, 5/11/2011
+
+Golden Gate Bridge Problem:
+
+Step 1:
+Find sizes of everything needed.
+Length of Golden Gate Bridge is: 2737 Meters
+Width of Golden Gate Bridge: 27 Meters
+Diameter of penny: 19.05 Milimeters
+Convert both to same units:
+	Bridge: 2737000 mm long, 27000 mm wide
+	Penny: 19.05 mm long
+
+Because pennies are circles, we won't be able to fully fill the bridge; there will be some empty space.
+
+Step 2:
+We will have 2 alternating rows
+()()()()()()()  -- 1417 pennies
+ ()()()()()()   -- 1415 pennies
+This will repeat for the entire length of the bridge.
+
+Step 3:
+Because of the way they are layed out with a slight overlap, we cannot just divide the length of the bridge by the length of a single penny to find the number of total rows.
+
+The length of the two rows is 33 mm.
+
+Step 4:
+I now divide the total length of the bridge by the length of the two rows.
+2737000mm/33mm = 82 939.3939
+Because we need whole numbers, we need to round down to 82,939 sets of rows
+
+Step 5:
+Finally, we multiply this by the number of pennies in the set (1417 + 1415)
+and get 82939 * (1417+1415) = 234 883 248 Total Pennies
+
+
